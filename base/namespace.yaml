@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: msa-dev
+  labels:
+    managed-by: argocd
+    environment: dev
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: msa-staging
+  labels:
+    managed-by: argocd
+    environment: staging
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: msa-prod
+  labels:
+    managed-by: argocd
+    environment: prod
